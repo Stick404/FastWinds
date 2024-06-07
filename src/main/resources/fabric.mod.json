@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "fast-winds",
 	"version": "${version}",
-	"name": "Fast Winds",
+	"name": "Fast-Winds",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -16,18 +16,11 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"stickia.github.fastwinds.FastWinds"
-		],
-		"client": [
-			"stickia.github.fastwinds.FastWindsClient"
+			"stickia.fastwinds.github.FastWinds"
 		]
 	},
 	"mixins": [
-		"fast-winds.mixins.json",
-		{
-			"config": "fast-winds.client.mixins.json",
-			"environment": "client"
-		}
+		"fast-winds.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",
